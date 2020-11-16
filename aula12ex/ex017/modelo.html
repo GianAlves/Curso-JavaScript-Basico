@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculo IMC</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Calculo IMC </h1>
+    </header>
+
+    <section>
+        <div id="imc">
+            <p>Nome</p><p> <input type="text" name="nome" id="nome"></p>
+            <p>Altura</p> <p><input type="number" name="altura" id="altura"></p>
+            <p>Peso</p><p> <input type="number" name="peso" id="peso"></p>
+            <p>Sexo</p>
+            <p> <input type="radio" name="sex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="sex" id="fem">
+                <label for="fme">Feminino</label>
+            </p>
+            <input type="button" value="Calcular IMC" onclick="IMC()">
+        </div>
+        <div id="res">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; GianAlves</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

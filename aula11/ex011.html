@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Verificaor de nacionalidade</title>
+</head>
+<body>
+    <h1>Verificador de nacionalidade</h1>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="nacionalidade" onclick="nacionalidade()">
+    <div id="mora">
+
+    </div>
+    <script>
+        function nacionalidade() {
+            var p1 = document.getElementById('pais')
+            var mora = document.getElementById('mora')
+            var test = (p1.value)
+            mora.innerHTML = `<p>Você está em <strong>${test}</strong></p>`
+            if (test == 'Brasil') {
+                mora.innerHTML += `<p>Você é <strong>Brasileiro</strong></p>`
+            } else {
+                mora.innerHTML += `<p>Você é <strong>Estrangeiro</strong></p>`
+            }
+        }
+    </script>    
+
+</body>
+</html>
